@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.HelloController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #504945;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.HelloController">
    <children>
-      <Button layoutX="367.0" layoutY="344.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" text="File Browser" />
-      <Button layoutX="485.0" layoutY="344.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" text="Send/Receive" />
-      <TextField layoutX="15.0" layoutY="344.0" prefHeight="37.0" prefWidth="328.0" promptText="FileBrowser" />
-      <TextArea layoutX="15.0" layoutY="74.0" onDragDropped="#handledropped" onDragOver="#handledragdrop" prefHeight="253.0" prefWidth="571.0" promptText="!Relevant Message would be displayed!">
+      <Button layoutX="554.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="File Browser" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="677.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Send/Receive" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField layoutX="23.0" layoutY="543.0" prefHeight="37.0" prefWidth="516.0" promptText="FileBrowser" style="-fx-background-color: #a89994;" />
+      <TextArea layoutX="23.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDropped="#handledropped" onDragOver="#handledragdrop" prefHeight="381.0" prefWidth="755.0" promptText="!Relevant Message would be displayed!" style="-fx-background-color: #484848;">
          <font>
             <Font size="15.0" />
          </font>
       </TextArea>
-      <TextField fx:id="textfield" layoutX="117.0" layoutY="19.0" onAction="#IPTextField" prefHeight="37.0" prefWidth="469.0" promptText="Current IP:" />
-      <Text layoutX="15.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current IP:">
+      <Text fill="WHITE" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #484848;" text="Current IP:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ProgressBar layoutX="23.0" layoutY="513.0" prefHeight="18.0" prefWidth="755.0" progress="0.0" />
+      <Label fx:id="ipLabel" layoutX="121.0" layoutY="18.0" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="121.0" layoutY="72.0" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #484848;" text="Receiver IP:">
          <font>
             <Font size="20.0" />
          </font>
