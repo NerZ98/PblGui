@@ -22,7 +22,7 @@ public class HelloController{
 
     @FXML
     TextField textfield = new TextField();
-    private Label ipLabel;
+    public TextField ipTextField;
 
     @FXML
     void loadPressed(ActionEvent event){
@@ -35,16 +35,6 @@ public class HelloController{
         System.out.println(filename);
     }
 
-//    public void IPTextField(ActionEvent actionEvent) {
-//            try {
-//                String ipAddress = InetAddress.getLocalHost().getHostAddress();
-//                textfield.setText(ipAddress);
-//            } catch (UnknownHostException e) {
-//                // handle exception appropriately
-//                e.printStackTrace();
-//            }
-//        }
-
     public void handledragdrop(DragEvent event) {
         if(event.getDragboard().hasFiles()){
             event.acceptTransferModes(TransferMode.ANY);
@@ -52,22 +42,21 @@ public class HelloController{
     }
 
     public void handledropped(DragEvent event) {
-//        if (event.getDragboard().hasFiles()) {
-//            event.getDragboard().getFiles().forEach(file -> System.out.println(file.getAbsolutePath()));
-//        }
+
         Dragboard db = event.getDragboard();
         File file = db.getFiles().get(0);
         System.out.println(file);
     }
 
-//    public void initialize() {
-//        try {
-//            InetAddress ip = InetAddress.getLocalHost();
-//            ipLabel.setText("IP address: " + ip.getHostAddress());
-//        } catch (UnknownHostException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    public void initialize() {
+        try {
+            InetAddress ip = InetAddress.getLocalHost();
+            //TextField ipTextField = new TextField("");
+            ipTextField.setText("IP address: " + ip.getHostAddress());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
