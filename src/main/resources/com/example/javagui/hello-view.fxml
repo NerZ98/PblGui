@@ -31,7 +31,7 @@
          </font>
       </Text>
       <ProgressBar layoutX="23.0" layoutY="513.0" prefHeight="18.0" prefWidth="755.0" progress="0.0" />
-      <TextField fx:id="ipReceiver" layoutX="121.0" layoutY="72.0" onAction="#handleInput" onKeyTyped="#restrictToComma" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" />
+<!--      <TextField fx:id="ipReceiver" layoutX="121.0" layoutY="72.0" onAction="#handleInput" onKeyTyped="#restrictToComma" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" />-->
       <Text fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #484848;" text="Receiver IP:">
          <font>
             <Font size="20.0" />
@@ -42,6 +42,7 @@
             <Font size="13.0" />
          </font>
       </Button>
+      <TextField fx:id="ipReceiver" layoutX="119.0" layoutY="78.0" prefHeight="25.0" prefWidth="556.0" />
 
 <!--      <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.ReceiveTextField">-->
 <!--         <TextField fx:id="inputField" onKeyTyped="#restrictToComma" onAction="#handleInput" promptText="Enter multiple values separated by comma"/>-->

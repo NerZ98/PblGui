@@ -65,6 +65,6 @@ public class HelloController{
 //    //ReceiveTextField.handleInput();
 //    public void restrictToComma(KeyEvent event){
 
-    ReceiveTextField.handleInput();
+    //ReceiveTextField.handleInput();
 
 }
