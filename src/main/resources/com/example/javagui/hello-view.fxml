@@ -10,15 +10,15 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #504945;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.HelloController">
    <children>
-      <Button layoutX="554.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="File Browser" textFill="WHITE">
+      <Button fx:id="ipReceive" layoutX="554.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Receive" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font></Button>
-      <Button layoutX="677.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Send/Receive" textFill="WHITE">
+      <Button fx:id="ipFileBrowser" layoutX="677.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="File Browser" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font></Button>
-      <TextField layoutX="23.0" layoutY="543.0" prefHeight="37.0" prefWidth="516.0" promptText="FileBrowser" style="-fx-background-color: #a89994;" />
+      <TextField layoutX="23.0" layoutY="543.0" prefHeight="37.0" prefWidth="326.0" promptText="FileBrowser" style="-fx-background-color: #a89994;" />
       <TextArea layoutX="23.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDropped="#handledropped" onDragOver="#handledragdrop" prefHeight="381.0" prefWidth="755.0" promptText="!Relevant Message would be displayed!" style="-fx-background-color: #484848;">
          <font>
             <Font size="15.0" />
@@ -37,5 +37,10 @@
             <Font size="20.0" />
          </font>
       </Text>
+      <Button fx:id="ipSend" layoutX="424.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Send" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
