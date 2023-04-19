@@ -14,9 +14,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import com.example.javagui.ReceiveTextField;
 
 public class HelloController{
 
@@ -58,5 +60,11 @@ public class HelloController{
         }
     }
 
+//    public void handleInput(ActionEvent actionEvent) {
+//    }
+//    //ReceiveTextField.handleInput();
+//    public void restrictToComma(KeyEvent event){
+
+    ReceiveTextField.handleInput();
 
 }

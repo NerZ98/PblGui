@@ -10,11 +10,11 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #504945;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.HelloController">
    <children>
-      <Button fx:id="ipReceive" layoutX="554.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Receive" textFill="WHITE">
+      <Button fx:id="ipReceive" layoutX="669.0" layoutY="543.0" mnemonicParsing="false" onAction="#loadPressed" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="File Browser" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font></Button>
-      <Button fx:id="ipFileBrowser" layoutX="677.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="File Browser" textFill="WHITE">
+      <Button fx:id="ipFileBrowser" layoutX="432.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Send" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font></Button>
@@ -31,16 +31,22 @@
          </font>
       </Text>
       <ProgressBar layoutX="23.0" layoutY="513.0" prefHeight="18.0" prefWidth="755.0" progress="0.0" />
-      <TextField layoutX="121.0" layoutY="72.0" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" />
+      <TextField fx:id="ipReceiver" layoutX="121.0" layoutY="72.0" onAction="#handleInput" onKeyTyped="#restrictToComma" prefHeight="37.0" prefWidth="650.0" style="-fx-background-color: #a89994;" />
       <Text fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #484848;" text="Receiver IP:">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Button fx:id="ipSend" layoutX="424.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Send" textFill="WHITE">
+      <Button fx:id="ipSend" layoutX="553.0" layoutY="543.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #a89994;" text="Receive" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
+
+<!--      <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.ReceiveTextField">-->
+<!--         <TextField fx:id="inputField" onKeyTyped="#restrictToComma" onAction="#handleInput" promptText="Enter multiple values separated by comma"/>-->
+<!--         <Button text="Submit" onAction="#handleInput"/>-->
+<!--      </VBox>-->
+
    </children>
 </AnchorPane>
