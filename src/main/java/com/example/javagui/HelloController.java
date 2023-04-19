@@ -52,7 +52,7 @@ public class HelloController{
         try {
             InetAddress ip = InetAddress.getLocalHost();
             //TextField ipTextField = new TextField("");
-            ipTextField.setText("IP address: " + ip.getHostAddress());
+            ipTextField.setText(ip.getHostAddress());
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
