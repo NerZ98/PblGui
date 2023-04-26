@@ -44,10 +44,5 @@
       </Button>
       <TextField fx:id="ipReceiver" layoutX="119.0" layoutY="78.0" prefHeight="25.0" prefWidth="556.0" />
 
-<!--      <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javagui.ReceiveTextField">-->
-<!--         <TextField fx:id="inputField" onKeyTyped="#restrictToComma" onAction="#handleInput" promptText="Enter multiple values separated by comma"/>-->
-<!--         <Button text="Submit" onAction="#handleInput"/>-->
-<!--      </VBox>-->
-
    </children>
 </AnchorPane>
